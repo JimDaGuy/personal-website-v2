@@ -2,7 +2,7 @@ import React from 'react'
 import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 
-import Header from './header'
+import Intro from './intro'
 import './layout.css'
 
 const Layout = ({ children }) => (
@@ -12,13 +12,15 @@ const Layout = ({ children }) => (
         site {
           siteMetadata {
             title
+            name
+            jobTitle
           }
         }
       }
     `}
     render={data => (
       <>
-        <Header siteTitle={data.site.siteMetadata.title} />
+        <Intro name={data.site.siteMetadata.name} jobTitle={data.site.siteMetadata.jobTitle} />
         <div
           style={{
             margin: `0 auto`,
