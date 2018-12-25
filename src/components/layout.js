@@ -3,6 +3,7 @@ import PropTypes from 'prop-types'
 import { StaticQuery, graphql } from 'gatsby'
 
 import Intro from './intro'
+import About from './about'
 import './layout.css'
 
 const Layout = ({ children }) => (
@@ -14,6 +15,7 @@ const Layout = ({ children }) => (
             title
             name
             jobTitle
+            firstname
           }
         }
       }
@@ -21,6 +23,7 @@ const Layout = ({ children }) => (
     render={data => (
       <>
         <Intro name={data.site.siteMetadata.name} jobTitle={data.site.siteMetadata.jobTitle} />
+        <About name={data.site.siteMetadata.name} firstname={data.site.siteMetadata.firstname} />
         <div
           style={{
             margin: `0 auto`,

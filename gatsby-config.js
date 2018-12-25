@@ -1,9 +1,11 @@
 module.exports = {
   siteMetadata: {
-    title: `James DiGrazia | Personal Website`,
+    title: `James DiGrazia | Software Engineer`,
     description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
     author: `James DiGrazia`,
     name: 'James DiGrazia',
+    firstname: 'James',
+    lastname: 'DiGrazia',
     jobTitle: 'Software Engineer',
   },
   plugins: [
