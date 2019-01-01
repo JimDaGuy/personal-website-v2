@@ -1,8 +1,11 @@
 import PropTypes from 'prop-types'
 import React from 'react'
+import { IconContext } from 'react-icons'
+import { FaLinkedin, FaFileAlt, FaEnvelope, FaTwitterSquare } from 'react-icons/fa';
 
 import aboutStyles from './about.module.css'
 import profileImage from '../images/squareProfile.jpg'
+import resume from '../files/resume.pdf'
 
 const About = ({ name, firstname }) => (
   <section
@@ -38,6 +41,18 @@ const About = ({ name, firstname }) => (
         <br></br>
         I'm currently seeking a Software Engineering Co-Op for the Fall of 2019. 
       </p>
+      <div
+        className={aboutStyles.iconContainer}
+      >
+        <IconContext.Provider value={{size: '15%', className: aboutStyles.icon}}>
+          <div>
+            <a href='https://www.linkedin.com/in/jimdaguy/' target='_blank' rel="noopener noreferrer"><FaLinkedin /></a>
+            <a href={resume} target='_blank' rel="noopener noreferrer"><FaFileAlt /></a>
+            <a href="mailto:james@jimdaguy.com"><FaEnvelope /></a>
+            <a href="https://twitter.com/jimdaguy" target='_blank' rel="noopener noreferrer"><FaTwitterSquare /></a>
+          </div>
+        </IconContext.Provider>
+      </div>
     </div>
   </section>
 )

@@ -32,6 +32,7 @@
   width: 90%;
   margin: 5px 5%;
   border-radius: 50%;
+  border: 10px outset #8EE4AF;
 }
 
 .maintext {
@@ -40,7 +41,30 @@
   font-family: 'Muli', georgia, serif;
 }
 
+.iconContainer {
+  width: 100%;
+}
+
+.icon {
+  color: #8EE4AF;
+  margin: 0 5%;
+  vertical-align: middle;
+}
+
+.icon:hover {
+  color:  #05386B;
+}
+
 @media screen and (min-width: 768px) {
+  .heading {
+    margin-top: 20px;
+    text-indent: 5%;
+  }
+
+  .subheading {
+    text-indent: 5%;
+  }
+
   .image {
     width: 30%;
     margin-top: 10px;
@@ -49,7 +73,14 @@
 
   .maintext {
     width: 55%;
+    font-size: 1.4em;
     margin-top: 10px;
     float: left;
+    margin-left: 5%;
+  }
+
+  .iconContainer {
+    width: 20%;
+    margin-left: 5%;
   }
 }
