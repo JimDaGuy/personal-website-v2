@@ -1,6 +1,6 @@
 import React from 'react'
 import { IconContext } from 'react-icons'
-import { FaSchool, FaFlag, FaKeyboard } from 'react-icons/fa';
+import { FaSchool, FaFlag, FaBuilding } from 'react-icons/fa';
 
 import experienceStyles from './experience.module.css'
 
@@ -47,7 +47,8 @@ const Experience = () => (
           I'm currently pursuing a four-year bachelors degree in Game Design and
           Development under the Golisano College of Computing and Information Sciences
             at the Rochester Institute of Technology in <b> Rochester, New York</b>.
-          I'm also working towards an immersion in Communications.
+          I'm also working towards an immersion in Communications. 
+          <b> I plan to graduate in May of 2020.</b>
         </p>
       </div>
     </div>
@@ -95,7 +96,7 @@ const Experience = () => (
       <div className={experienceStyles.experienceSymbolContainer}>
         <div className={experienceStyles.experienceSymbol}>
           <IconContext.Provider value={{ size: '70%', className: experienceStyles.symbol }}>
-            <FaKeyboard />
+            <FaBuilding />
           </IconContext.Provider>
         </div>
       </div>
