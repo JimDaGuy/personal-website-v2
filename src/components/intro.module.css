@@ -3,7 +3,7 @@
 .section {
   margin: 0;
   min-height: 100vh;
-  min-width: 350px;
+  min-width: 425px;
   width: 100%;
   display: flex;
   align-items: center;

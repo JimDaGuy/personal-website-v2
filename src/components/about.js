@@ -22,7 +22,7 @@ const About = ({ name, firstname }) => (
       I like making rich web applications
     </h2>
     <div
-    className={aboutStyles.imageTextContainer}
+      className={aboutStyles.imageTextContainer}
     >
       <img
         className={aboutStyles.image}
@@ -33,24 +33,44 @@ const About = ({ name, firstname }) => (
         className={`${aboutStyles.text} ${aboutStyles.maintext}`}
       >
         I'm a third year Game Design and Development student at the Rochester Institute of
-        Technology. I started learning Game Development because I've always wanted to combine
-        creative expression with technology. Through my studies I found a love for web development
-        and decided to pursue it. I love writing software and always find myself trying to learn
-        new things.
+        Technology. I started learning game development because I've always wanted to combine
+        creative expression with technology. Through my studies I found a love for all kinds
+        of software development and decided to pursue it. I love writing software and always
+        find myself trying to learn new things.
         <br></br>
         <br></br>
-        I'm currently seeking a Software Engineering Co-Op for the Fall of 2019. 
+        I'm currently seeking a Software Engineering Co-Op for the Fall of 2019.
       </p>
       <div
         className={aboutStyles.iconContainer}
       >
-        <IconContext.Provider value={{size: '15%', className: aboutStyles.icon}}>
-          <div>
-            <a href='https://www.linkedin.com/in/jimdaguy/' target='_blank' rel="noopener noreferrer"><FaLinkedin /></a>
-            <a href={resume} target='_blank' rel="noopener noreferrer"><FaFileAlt /></a>
-            <a href="mailto:james@jimdaguy.com"><FaEnvelope /></a>
-            <a href="https://twitter.com/jimdaguy" target='_blank' rel="noopener noreferrer"><FaTwitterSquare /></a>
-          </div>
+        <IconContext.Provider value={{ size: '15%', className: aboutStyles.icon }}>
+          <a
+            href='https://www.linkedin.com/in/jimdaguy/'
+            target='_blank'
+            rel="noopener noreferrer"
+            aria-label="Linkedin"
+            title="Linkedin"
+          ><FaLinkedin /></a>
+          <a
+            href={resume}
+            target='_blank'
+            rel="noopener noreferrer"
+            aria-label="Resume"
+            title="Resume"
+          ><FaFileAlt /></a>
+          <a
+            href="mailto:james@jimdaguy.com"
+            aria-label="Email"
+            title="Email"
+          ><FaEnvelope /></a>
+          <a
+            href="https://twitter.com/jimdaguy"
+            target='_blank'
+            rel="noopener noreferrer"
+            aria-label="Twitter"
+            title="Twitter"
+          ><FaTwitterSquare /></a>
         </IconContext.Provider>
       </div>
     </div>

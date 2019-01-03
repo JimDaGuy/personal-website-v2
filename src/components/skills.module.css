@@ -4,7 +4,7 @@
   margin: 0;
   padding: 10px;
   min-height: 100vh;
-  min-width: 350px;
+  min-width: 425px;
   width: 100%;
   background-image: url(../images/skillsBackground1.jpg);
   background-repeat: no-repeat;
@@ -33,6 +33,7 @@
   font-size: 2.25em;
   margin: 0;
   text-align: center;
+  text-indent: 5%;
 }
 
 .imageTextContainer {
@@ -47,12 +48,6 @@
   border: 10px outset #8EE4AF;
 }
 
-.maintext {
-  font-size: 1.1em;
-  width: 100%;
-  font-family: 'Muli', georgia, serif;
-}
-
 .skillBar {
   width: 90%;
   margin: 10px auto;
@@ -65,14 +60,6 @@
   border-bottom: 3px solid #379683;
 }
 
-/*
-#05386B Black
-#379683 Dark Green
-#5CDB95 Green
-#8EE4AF Light Green
-#EDF5E1 White
-*/
-
 .skillBox {
   background: #379683;
   float: left;
@@ -84,9 +71,14 @@
 
 .skillText {
   color: #EDF5E1;
+  font-family: 'Muli', georgia, serif;
 }
 
 @media screen and (min-width: 768px) {
+  .heading {
+    margin-top: 20px;
+  }
+
   .image {
     width: 30%;
     margin-top: 10px;

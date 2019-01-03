@@ -71,7 +71,7 @@ const Skills = ({ name, firstname }) => (
       </div>
     </div>
     <div className={skillsStyles.skillBar}>
-      <h2 className={skillsStyles.skillBarText}>IDEs</h2>
+      <h2 className={skillsStyles.skillBarText}>IDEs and Engines</h2>
       <div className={skillsStyles.skillBox}>
         <span className={skillsStyles.skillText}>Visual Studio</span>
       </div>
@@ -80,6 +80,9 @@ const Skills = ({ name, firstname }) => (
       </div>
       <div className={skillsStyles.skillBox}>
         <span className={skillsStyles.skillText}>Atom</span>
+      </div>
+      <div className={skillsStyles.skillBox}>
+        <span className={skillsStyles.skillText}>Unity</span>
       </div>
     </div>
   </section>
