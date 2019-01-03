@@ -1,6 +1,7 @@
 import React from 'react'
 import { IconContext } from 'react-icons'
 import { FaSchool, FaFlag, FaBuilding } from 'react-icons/fa';
+import resume from '../files/resume.pdf'
 
 import experienceStyles from './experience.module.css'
 
@@ -44,9 +45,9 @@ const Experience = () => (
         <p
           className={experienceStyles.description}
         >
-          I'm currently pursuing a four-year bachelors degree in Game Design and
-          Development under the Golisano College of Computing and Information Sciences
-            at the Rochester Institute of Technology in <b> Rochester, New York</b>.
+          I'm currently pursuing a four-year bachelors degree in <b> Game Design and
+          Development</b> under the Golisano College of Computing and Information Sciences
+            at the <b> Rochester Institute of Technology</b> in <b> Rochester, New York</b>.
           I'm also working towards an immersion in Communications. 
           <b> I plan to graduate in May of 2020.</b>
         </p>
@@ -85,8 +86,9 @@ const Experience = () => (
         >
           The social director is responsible for organizing and coordinating
           social events for members and working with other organizations to
-          plan individual events. Responsibilities include managing a yearly
-          budget and maintaining a full, yet organized calendar of events.
+          plan events for all of Computer Science House. Responsibilities include
+          managing a yearly budget and maintaining a full, yet organized calendar
+          of events.
         </p>
       </div>
     </div>
@@ -129,6 +131,19 @@ const Experience = () => (
           to be later implemented into a developer dashboard.
         </p>
       </div>
+    </div>
+    <div
+      className={experienceStyles.resumeButtonContainer}
+    >
+      <a
+      href={resume}
+      target='_blank'
+      rel="noopener noreferrer"
+      aria-label="Resume"
+      className={experienceStyles.resumeButton}
+      >
+        Check out my resume!
+      </a>
     </div>
   </section>
 )
