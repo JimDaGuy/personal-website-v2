@@ -8,11 +8,11 @@
   min-height: 100vh;
   min-width: 425px;
   width: 100%;
-  background-color: #379683;
+  background-color: #5CDB95;
 }
 
 .heading {
-  color: #8EE4AF;
+  color: #05386B;
   text-align: center;
   font-size: 2.25rem;
   margin: 0;
@@ -35,21 +35,25 @@
   height: 60px;
   margin: 0 calc(50% - 30px);
   border-radius: 50%;
-  border: 5px solid #8EE4AF;
-  background-color: #05386B;
+  border: 5px solid #05386B;
+  background-color: transparent;
 }
 
 .symbol {
   margin: 15%;
-  color: #EDF5E1;
+  color: #05386B;
 }
 
 .experienceTextBox {
   width: 100%;
   min-height: 100px;
-  background-color: 	#05386B;
-  border: 5px solid #8EE4AF;
+  background-color: 	#379683;
+  border: 5px solid #05386B;
   border-radius: 5px;
+}
+
+.experienceTextBox:hover {
+  border-color: #EDF5E1;
 }
 
 .title {
@@ -58,7 +62,7 @@
   font-family: 'Raleway', Georgia, 'Times New Roman', Times, serif;
   color: #EDF5E1;
   padding-bottom: 2px;
-  border-bottom: 2px solid #8EE4AF;
+  border-bottom: 2px solid #5CDB95;
   text-indent: 5px;
 }
 
@@ -67,7 +71,8 @@
   margin: 5px 0;
   font-family: 'Raleway', Georgia, 'Times New Roman', Times, serif;
   color: #EDF5E1;
-  border-bottom: 2px solid #8EE4AF;
+  border-bottom: 2px solid #5CDB95;
+  padding-bottom: 5px;
   text-indent: 10px;
   width: 50%;
   float: left;
@@ -78,7 +83,8 @@
   margin: 5px 0;
   font-family: 'Raleway', Georgia, 'Times New Roman', Times, serif;
   color: #EDF5E1;
-  border-bottom: 2px solid #8EE4AF;
+  border-bottom: 2px solid #5CDB95;
+  padding-bottom: 5px;
   text-align: right;
   text-indent: 10px;
   width: 50%;
@@ -104,17 +110,17 @@
 }
 
 .resumeButton {
-  border: 5px solid #8EE4AF;
+  border: 5px solid #05386B;
   padding: .5em 1em;
   border-radius: 290486px;
-  background-color: #05386B;
-  color: #EDF5E1;
+  background-color: transparent;
+  color: #05386B;
   font-family: 'Raleway', Georgia, 'Times New Roman', Times, serif;
   text-decoration: none;
 }
 
 .resumeButton:hover {
-  border-color: #5CDB95;
+  border-color: #EDF5E1;
 }
 
 @media screen and (min-width: 768px) {

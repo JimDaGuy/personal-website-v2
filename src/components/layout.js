@@ -7,6 +7,7 @@ import About from './about'
 import Skills from './skills'
 import Experience from './experience'
 import './layout.css'
+import Portfolio from './Portfolio';
 
 const Layout = ({ children }) => (
   <StaticQuery
@@ -27,7 +28,8 @@ const Layout = ({ children }) => (
         <Intro name={data.site.siteMetadata.name} jobTitle={data.site.siteMetadata.jobTitle} />
         <About name={data.site.siteMetadata.name} firstname={data.site.siteMetadata.firstname} />
         <Skills name={data.site.siteMetadata.name} firstname={data.site.siteMetadata.firstname} />
-        <Experience name={data.site.siteMetadata.name} firstname={data.site.siteMetadata.firstname} />
+        <Experience/>
+        <Portfolio/>
         <div
           style={{
             margin: `0 auto`,
