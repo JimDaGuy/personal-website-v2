@@ -1,9 +1,8 @@
-import PropTypes from 'prop-types'
 import React from 'react'
 
 import skillsStyles from './skills.module.css'
 
-const Skills = ({ name, firstname }) => (
+const Skills = () => (
   <section
     className={skillsStyles.section}
   >
@@ -87,15 +86,5 @@ const Skills = ({ name, firstname }) => (
     </div>
   </section>
 )
-
-Skills.propTypes = {
-  name: PropTypes.string,
-  firstname: PropTypes.string
-}
-
-Skills.defaultProps = {
-  name: `Jane Doe`,
-  firstname: `Jane`
-}
 
 export default Skills
