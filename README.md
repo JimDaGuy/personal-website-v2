@@ -3,5 +3,5 @@
   James DiGrazia's Personal Website
 </h1>
 
-Built with GatsbyJS. Hosted [here](https://jimdaguy.com/)!**
+Built with GatsbyJS. Hosted [here](https://jimdaguy.com/)!
 <!-- AUTO-GENERATED-CONTENT:END -->
