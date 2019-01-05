@@ -24,67 +24,69 @@ const Contact = () => (
       data-netlify="true"
       data-netlify-honeypot="bot-field"
       className={contactStyles.form}
-    >   <label
-          for="name"
-          className={contactStyles.inputLabel}
-        >
+    >
+      <p className={contactStyles.botField}>
+        <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
+      </p>
+      <label
+        htmlFor="name"
+        className={contactStyles.inputLabel}
+      >
         Name:
         </label>
-        <input 
-          type="text"
-          placeholder="Your Name"
-          name="Name"
-          id="name"
-          className={contactStyles.inputField}
-        ></input>
-        <label 
-          for="email"
-          className={contactStyles.inputLabel}
-        >
-          Email:
+      <input
+        type="text"
+        placeholder="Your Name"
+        name="Name"
+        id="name"
+        className={contactStyles.inputField}
+      ></input>
+      <label
+        htmlFor="email"
+        className={contactStyles.inputLabel}
+      >
+        Email:
         </label>
-        <input
-          type="text"
-          placeholder="Your Email Address"
-          name="Email"
-          id="email"
-          className={contactStyles.inputField}
-          ></input>
-        <label 
-          for="subject"
-          className={contactStyles.inputLabel}
-        >
-          Subject:
+      <input
+        type="text"
+        placeholder="Your Email Address"
+        name="Email"
+        id="email"
+        className={contactStyles.inputField}
+      ></input>
+      <label
+        htmlFor="subject"
+        className={contactStyles.inputLabel}
+      >
+        Subject:
         </label>
-        <input
-          type="text"
-          placeholder="Subject"
-          name="Subject"
-          id="subject"
-          className={contactStyles.inputField}
-        ></input>
-        <label 
-          for="message"
-          className={contactStyles.inputLabel}
-        >
-          Message:
+      <input
+        type="text"
+        placeholder="Subject"
+        name="Subject"
+        id="subject"
+        className={contactStyles.inputField}
+      ></input>
+      <label
+        htmlFor="message"
+        className={contactStyles.inputLabel}
+      >
+        Message:
         </label>
-        <input
-          type="text"
-          placeholder="Message"
-          name="Message"
-          id="message"
-          className={contactStyles.inputField}
-        ></input>
-        <input
-          type="submit"
-          name="submit"
-          value="Send Message"
-          id="submit"
-          className={contactStyles.submit}
-        ></input>
+      <input
+        type="text"
+        placeholder="Message"
+        name="Message"
+        id="message"
+        className={contactStyles.inputField}
+      ></input>
+      <button
+        className={contactStyles.submit}
+      >
+      Send Message
+      </button>
     </form>
   </section>
-        )
-        
-        export default Contact
+)
+
+export default Contact
