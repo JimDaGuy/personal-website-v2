@@ -65,6 +65,13 @@
   clear: both;
 }
 
+.messageBox {
+  width: 80%;
+  margin: 5px 10%;
+  float: left;
+  clear: both;
+}
+
 .submit {
   width: 200px;
   margin: 5px calc(50% - 100px);

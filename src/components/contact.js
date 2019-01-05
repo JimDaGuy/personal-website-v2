@@ -37,7 +37,6 @@ const Contact = () => (
         </label>
       <input
         type="text"
-        placeholder="Your Name"
         name="Name"
         id="name"
         className={contactStyles.inputField}
@@ -50,7 +49,6 @@ const Contact = () => (
         </label>
       <input
         type="text"
-        placeholder="Your Email Address"
         name="Email"
         id="email"
         className={contactStyles.inputField}
@@ -63,7 +61,6 @@ const Contact = () => (
         </label>
       <input
         type="text"
-        placeholder="Subject"
         name="Subject"
         id="subject"
         className={contactStyles.inputField}
@@ -74,13 +71,14 @@ const Contact = () => (
       >
         Message:
         </label>
-      <input
+      <textarea
+        rows='3' 
+        data-min-rows='3'
         type="text"
-        placeholder="Message"
         name="Message"
         id="message"
-        className={contactStyles.inputField}
-      ></input>
+        className={contactStyles.messageBox}
+      ></textarea>
       <button
         className={contactStyles.submit}
       >
