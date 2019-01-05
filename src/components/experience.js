@@ -32,16 +32,20 @@ const Experience = () => (
         >
           Student 
         </h2>
-        <h3
-          className={experienceStyles.group}
+        <div
+          className={experienceStyles.groupDurationContainer}
         >
+          <span
+            className={experienceStyles.group}
+          >
           Rochester Institute of Tech.
-        </h3>
-        <h3
-          className={experienceStyles.duration}
-        >
+          </span>
+          <span
+            className={experienceStyles.duration}
+          >
           FALL 2016 - CURRENT
-        </h3>
+          </span>
+        </div>  
         <p
           className={experienceStyles.description}
         >
@@ -70,17 +74,21 @@ const Experience = () => (
           className={experienceStyles.title}
         >
           Social Director
-            </h2>
-        <h3
-          className={experienceStyles.group}
-        >Computer Science House
-          
-            </h3>
-        <h3
-          className={experienceStyles.duration}
+        </h2>
+        <div
+          className={experienceStyles.groupDurationContainer}
         >
+          <span
+            className={experienceStyles.group}
+          >
+          Computer Science House
+          </span>
+          <span
+            className={experienceStyles.duration}
+          >
           FALL 2017 - SPRING 2018
-            </h3>
+          </span>
+        </div>  
         <p
           className={experienceStyles.description}
         >
@@ -110,16 +118,20 @@ const Experience = () => (
         >
           Software Developer
         </h2>
-        <h3
-          className={experienceStyles.group}
+        <div
+          className={experienceStyles.groupDurationContainer}
         >
+          <span
+            className={experienceStyles.group}
+          >
           Liberty Mutual Insurance
-        </h3>
-        <h3
-          className={experienceStyles.duration}
-        >
+          </span>
+          <span
+            className={experienceStyles.duration}
+          >
           SUMMER 2018
-        </h3>
+          </span>
+        </div>  
         <p
           className={experienceStyles.description}
         >

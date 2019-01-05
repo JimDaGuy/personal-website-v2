@@ -66,30 +66,26 @@
   text-indent: 5px;
 }
 
-.group {
+.groupDurationContainer {
+  margin: 0;
+  width: 100%;
   font-size: .8rem;
-  margin: 5px 0;
   font-family: 'Raleway', Georgia, 'Times New Roman', Times, serif;
   color: #EDF5E1;
   border-bottom: 2px solid #5CDB95;
-  padding-bottom: 5px;
+  overflow: auto;
+}
+
+.group {
   text-indent: 10px;
-  width: 50%;
   float: left;
 }
 
 .duration {
-  font-size: .8rem;
-  margin: 5px 0;
-  font-family: 'Raleway', Georgia, 'Times New Roman', Times, serif;
-  color: #EDF5E1;
-  border-bottom: 2px solid #5CDB95;
-  padding-bottom: 5px;
   text-align: right;
   text-indent: 10px;
-  width: 50%;
   direction: rtl;
-  float: left;
+  float: right;
 }
 
 .description {
