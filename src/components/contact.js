@@ -28,6 +28,7 @@ const Contact = () => (
       <p className={contactStyles.botField}>
         <label>Don’t fill this out if you're human: <input name="bot-field" /></label>
       </p>
+      <input type="hidden" name="form-name" value="contact" />
       <label
         htmlFor="name"
         className={contactStyles.inputLabel}
