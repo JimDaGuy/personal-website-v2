@@ -18,6 +18,7 @@
   background-image: -webkit-linear-gradient(bottom left, #13547A 0%, #80D0C7 100%);
   background-image: linear-gradient(to top right, #13547A 0%, #80D0C7 100%);
   */
+  overflow: auto;
 }
 
 .nameJobContainer {
