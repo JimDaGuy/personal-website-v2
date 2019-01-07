@@ -10,6 +10,7 @@ import bubblePhoenixImage from '../images/bubblephoenix.png'
 const Portfolio = () => (
   <section
     className={portfolioStyles.section}
+    id="portfolio-section"
   >
     <h1
       className={portfolioStyles.heading}

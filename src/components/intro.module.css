@@ -8,6 +8,7 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: column;
   background-color: #5CDB95;
   /*
   background-image: -ms-linear-gradient(bottom left, #13547A 0%, #80D0C7 100%);
@@ -47,4 +48,61 @@
   font-size: 1.6rem;
   font-family: 'Major Mono Display', -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, 
   Oxygen, Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+}
+
+.scrollContainer {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.scrollLink {
+	padding-top: 60px;
+}
+
+.scrollSpan {
+	position: absolute;
+	bottom: 50px;
+	left: 212.5px;
+	width: 24px;
+	height: 24px;
+	margin-left: -12px;
+	border-left: 1px solid #fff;
+	border-bottom: 1px solid #fff;
+	-webkit-transform: rotate(-45deg);
+	transform: rotate(-45deg);
+	-webkit-animation: scrollAnimation 3s infinite;
+	animation: scrollAnimation 3s infinite;
+	box-sizing: border-box;
+}
+
+@-webkit-keyframes scrollAnimation {
+	0% {
+		-webkit-transform: rotate(-45deg) translate(0, 0);
+	}
+	20% {
+		-webkit-transform: rotate(-45deg) translate(-10px, 10px);
+	}
+	40% {
+		-webkit-transform: rotate(-45deg) translate(0, 0);
+	}
+}
+
+@keyframes scrollAnimation {
+	0% {
+		transform: rotate(-45deg) translate(0, 0);
+	}
+	20% {
+		transform: rotate(-45deg) translate(-10px, 10px);
+	}
+	40% {
+		transform: rotate(-45deg) translate(0, 0);
+	}
+}
+
+@media screen and (min-width: 425px) {
+  .scrollSpan {
+    left: 50%;
+  }
 }

@@ -10,6 +10,13 @@ import Contact from './contact'
 import Footer from './footer'
 import './layout.css'
 import SEO from './seo';
+import SmoothScroll from 'smooth-scroll'
+
+SmoothScroll('a[href*="#"]', {
+  speed: 1500,
+  speedAsDuration: true,
+  updateURL: false,
+});
 
 const Layout = () => (
   <StaticQuery

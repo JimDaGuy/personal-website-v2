@@ -56,6 +56,8 @@
 .skillBarText {
   color: #EDF5E1;
   padding-bottom: 5px;
+  margin-top: 20px;
+  margin-bottom: 5px;
   border-bottom: 3px solid #379683;
 }
 

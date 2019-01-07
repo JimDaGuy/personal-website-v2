@@ -10,6 +10,7 @@ import resume from '../files/resume.pdf'
 const About = ({ name, firstname }) => (
   <section
     className={aboutStyles.section}
+    id="about-section"
   >
     <h1
       className={`${aboutStyles.text} ${aboutStyles.heading}`}

@@ -6,6 +6,7 @@ import introStyles from './intro.module.css'
 const Intro = ({ name, jobTitle }) => (
   <section
     className={introStyles.section}
+    id="intro-section"
   >
     <div
       className={introStyles.nameJobContainer}
@@ -21,6 +22,19 @@ const Intro = ({ name, jobTitle }) => (
         className={introStyles.jobTitle}
       >{jobTitle}
       </h2>
+    </div>
+    <div
+      className={introStyles.scrollContainer}
+    >
+      <a
+        href="#about-section"
+        className={introStyles.scrollLink}
+      >
+        <span
+          className={introStyles.scrollSpan}
+        >
+        </span>
+      </a>
     </div>
   </section>
 )

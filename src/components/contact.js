@@ -5,6 +5,7 @@ import contactStyles from './contact.module.css'
 const Contact = () => (
   <section
     className={contactStyles.section}
+    id="contact-section"
   >
     <div className={contactStyles.overlay}></div>
     <h1

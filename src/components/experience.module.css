@@ -113,6 +113,7 @@
   color: #05386B;
   font-family: 'Raleway', Georgia, 'Times New Roman', Times, serif;
   text-decoration: none;
+  margin-top: 10px;
 }
 
 .resumeButton:hover {

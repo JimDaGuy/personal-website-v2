@@ -5,6 +5,7 @@ import skillsStyles from './skills.module.css'
 const Skills = () => (
   <section
     className={skillsStyles.section}
+    id="skills-section"
   >
     <h1
       className={`${skillsStyles.text} ${skillsStyles.heading}`}

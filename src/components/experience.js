@@ -8,6 +8,7 @@ import experienceStyles from './experience.module.css'
 const Experience = () => (
   <section
     className={experienceStyles.section}
+    id="experience-section"
   >
     <h1
       className={experienceStyles.heading}
