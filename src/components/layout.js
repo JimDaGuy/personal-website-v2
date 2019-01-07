@@ -10,13 +10,18 @@ import Contact from './contact'
 import Footer from './footer'
 import './layout.css'
 import SEO from './seo';
-import SmoothScroll from 'smooth-scroll'
 
-SmoothScroll('a[href*="#"]', {
-  speed: 1500,
-  speedAsDuration: true,
-  updateURL: false,
-});
+// Only import smooth scroll if window is defined.
+// Prevents failure during webpack build
+if (typeof window !== 'undefined') {
+  const SmoothScroll = require('smooth-scroll');
+
+  SmoothScroll('a[href*="#"]', {
+    speed: 1500,
+    speedAsDuration: true,
+    updateURL: false,
+  });
+}
 
 const Layout = () => (
   <StaticQuery
@@ -38,10 +43,10 @@ const Layout = () => (
         <Intro name={data.site.siteMetadata.name} jobTitle={data.site.siteMetadata.jobTitle} />
         <About name={data.site.siteMetadata.name} firstname={data.site.siteMetadata.firstname} />
         <Skills name={data.site.siteMetadata.name} firstname={data.site.siteMetadata.firstname} />
-        <Experience/>
-        <Portfolio/>
-        <Contact/>
-        <Footer/>
+        <Experience />
+        <Portfolio />
+        <Contact />
+        <Footer />
       </>
     )}
   />
