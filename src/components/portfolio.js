@@ -34,7 +34,7 @@ const Portfolio = () => (
           Paint Gauge
         <IconContext.Provider value={{ size: '1em', className: portfolioStyles.github }}>
             <a
-              href="https://github.com/JimDaGuy/paint-gauge"
+              href="https://github.com/JimDaGuy/crispy-adventure"
               target='_blank'
               rel="noopener noreferrer"
               aria-label="Paint Guage Github Repository"
@@ -57,7 +57,7 @@ const Portfolio = () => (
           <div className={portfolioStyles.projectSkill}>React</div>
           <div className={portfolioStyles.projectSkill}>Node</div>
           <div className={portfolioStyles.projectSkill}>Express</div>
-          <div className={portfolioStyles.projectSkill}>MySQL</div>
+          <div className={portfolioStyles.projectSkill}>MongoDB</div>
           <div className={portfolioStyles.projectSkill}>Harvard Art Museum API</div>
         </div>
       </div>
